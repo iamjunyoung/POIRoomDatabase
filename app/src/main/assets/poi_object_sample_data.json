@@ -1,0 +1,203 @@
+{
+  "data": {
+    "6831": {
+      "buildingCode": "6831",
+      "name": {
+        "en": "LG Science Park",
+        "kr": "LG사이언스파크"
+      },
+      "floors": {
+        "1": {
+          "floorCode": "1",
+          "name": {
+            "en": "1F",
+            "kr": "1층"
+          },
+          "order": 0,
+          "index": 1,
+          "customPointData": {
+            "8ab2c5a6-5913-11ea-93f1-9f906c0e6718": {
+              "cpId": "8ab2c5a6-5913-11ea-93f1-9f906c0e6718",
+              "pos": {
+                "x": 9.67,
+                "y": 10.84
+              },
+              "name": {
+                "kr": "충전대"
+              },
+              "attributes": {
+
+              },
+              "radius": 12,
+              "type": 1001,
+              "isRestricted": 0,
+              "theta": 0
+            },
+            "2593e5e0-5791-11ea-92d2-893e361a6a29": {
+              "cpId": "2593e5e0-5791-11ea-92d2-893e361a6a29",
+              "pos": {
+                "x": 11.45,
+                "y": 15.28
+              },
+              "name": {
+                "kr": "대기"
+              },
+              "attributes": {
+                "elevatorId": "0012312",
+                "elevatorVendor": 1,
+                "floorList": "1-2"
+              },
+              "radius": 3,
+              "type": 3,
+              "isRestricted": 0,
+              "theta": -90
+            },
+            "테스트A": {
+              "cpId": "테스트A",
+              "pos": {
+                "x": 8.07,
+                "y": 18.26
+              },
+              "name": {
+                "kr": "테스트A"
+              },
+              "attributes": {
+                "elevatorId": "0012312",
+                "elevatorVendor": 1,
+                "floorList": "1-2"
+              },
+              "radius": 0,
+              "type": 1,
+              "isRestricted": 0,
+              "theta": -90
+            },
+            "테스트B": {
+              "cpId": "테스트B",
+              "pos": {
+                "x": 16.65,
+                "y": 18.19
+              },
+              "name": {
+                "kr": "테스트B"
+              },
+              "attributes": {
+                "elevatorId": "0012312",
+                "elevatorVendor": 1,
+                "floorList": "1-2"
+              },
+              "radius": 0,
+              "type": 1,
+              "isRestricted": 0,
+              "theta": 180
+            },
+            "테스트C": {
+              "cpId": "테스트C",
+              "pos": {
+                "x": 8.54,
+                "y": 8.2
+              },
+              "name": {
+                "kr": "테스트C"
+              },
+              "attributes": {
+                "elevatorId": "0012312",
+                "elevatorVendor": 1,
+                "floorList": "1-2"
+              },
+              "radius": 0,
+              "type": 1,
+              "isRestricted": 0,
+              "theta": 0
+            },
+            "테스트D": {
+              "cpId": "테스트D",
+              "pos": {
+                "x": 16.65,
+                "y": 8.23
+              },
+              "name": {
+                "kr": "테스트D"
+              },
+              "attributes": {
+                "elevatorId": "0012312",
+                "elevatorVendor": 1,
+                "floorList": "1-2"
+              },
+              "radius": 0,
+              "type": 1,
+              "isRestricted": 0,
+              "theta": 0
+            },
+            "테스트E": {
+              "cpId": "테스트E",
+              "pos": {
+                "x": 13.02,
+                "y": 13.27
+              },
+              "name": {
+                "kr": "테스트E"
+              },
+              "attributes": {
+                "elevatorId": "0012312",
+                "elevatorVendor": 1,
+                "floorList": "1-2"
+              },
+              "radius": 0,
+              "type": 1,
+              "isRestricted": 0,
+              "theta": 0
+            }
+          }
+        },
+        "2": {
+          "floorCode": "2",
+          "name": {
+            "en": "2F",
+            "kr": "2층"
+          },
+          "order": 1,
+          "index": 2,
+          "customPointData": {
+            "2593e5e0-5791-11ea-92d2-893e361a6a28": {
+              "cpId": "2593e5e0-5791-11ea-92d2-893e361a6a28",
+              "pos": {
+                "x": 17.6,
+                "y": 6.71679436618501
+              },
+              "name": {
+                "kr": "2층E/L밖"
+              },
+              "attributes": {
+
+              },
+              "radius": 12,
+              "type": 1001,
+              "isRestricted": 0,
+              "theta": 1
+            },
+            "2193e5e0-5731-11ea-92d2-893e362a2a29": {
+              "cpId": "2193e5e0-5731-11ea-92d2-893e362a2a29",
+              "pos": {
+                "x": 17.48,
+                "y": 8.71679436618501
+              },
+              "name": {
+                "kr": "2층E/L안"
+              },
+              "attributes": {
+                "elevatorId": "0012312",
+                "elevatorVendor": 1,
+                "floorList": "1-2"
+              },
+              "radius": 3,
+              "type": 3,
+              "isRestricted": 0,
+              "theta": 0
+            }
+          }
+        }
+      }
+    }
+  },
+  "result": true
+}
