@@ -9,20 +9,20 @@ import androidx.room.Query;
 import androidx.room.Update;
 
 @Dao
-public interface UserDao {
+public interface POIDao {
     @Insert
-    long insert(User user);
+    long insert(POI poi);
 
     @Update
-    int update(User user);
+    int update(POI poi);
 
-    @Query("DELETE FROM user_table")
+    @Query("DELETE FROM poi_table")
     int deleteAll();
 
-    @Query("DELETE FROM user_table WHERE id = :id")
+    @Query("DELETE FROM poi_table WHERE id = :id")
     int deleteUser(int id);
 
-    @Query("SELECT * from user_table ORDER BY userName ASC")
-    LiveData<List<User>> getAllUsers();
+    @Query("SELECT * from poi_table ORDER BY id ASC")
+    LiveData<List<POI>> getAllUsers();
 
 }

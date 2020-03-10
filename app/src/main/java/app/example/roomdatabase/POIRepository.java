@@ -8,25 +8,25 @@ import java.util.List;
 
 import androidx.lifecycle.LiveData;
 
-class UserRepository {
-    private static final String TAG = UserRepository.class.getSimpleName();
+class POIRepository {
+    private static final String TAG = POIRepository.class.getSimpleName();
 
-    private final UserDao userDao;
-    private final LiveData<List<User>> allUsers;
+    private final POIDao POIDao;
+    private final LiveData<List<POI>> allUsers;
 
-    UserRepository(Application application) {
-        UserRoomDatabase db = UserRoomDatabase.getDatabase(application);
-        userDao = db.userDao();
-        allUsers = userDao.getAllUsers();
+    POIRepository(Application application) {
+        POIRoomDatabase db = POIRoomDatabase.getDatabase(application);
+        POIDao = db.userDao();
+        allUsers = POIDao.getAllUsers();
     }
 
-    public void insert(User user) {
-        new AsyncTask<User, Void, Long>() {
+    public void insert(POI POI) {
+        new AsyncTask<POI, Void, Long>() {
             @Override
-            protected Long doInBackground(User... users) {
-                if (userDao == null)
+            protected Long doInBackground(POI... POIS) {
+                if (POIDao == null)
                     return -1L;
-                return userDao.insert(users[0]);
+                return POIDao.insert(POIS[0]);
             }
 
             @Override
@@ -34,16 +34,16 @@ class UserRepository {
                 super.onPostExecute(aLong);
                 Log.d(TAG, "insert : " + aLong);
             }
-        }.execute(user);
+        }.execute(POI);
     }
 
-    public void update(User user) {
-        new AsyncTask<User, Void, Integer>() {
+    public void update(POI POI) {
+        new AsyncTask<POI, Void, Integer>() {
             @Override
-            protected Integer doInBackground(User... users) {
-                if (userDao == null)
+            protected Integer doInBackground(POI... POIS) {
+                if (POIDao == null)
                     return -1;
-                return userDao.update(users[0]);
+                return POIDao.update(POIS[0]);
             }
 
             @Override
@@ -51,16 +51,16 @@ class UserRepository {
                 super.onPostExecute(integer);
                 Log.d(TAG, "update : " + integer);
             }
-        }.execute(user);
+        }.execute(POI);
     }
 
     public void deleteAll() {
         new AsyncTask<Void, Void, Integer>() {
             @Override
             protected Integer doInBackground(Void... voids) {
-                if (userDao == null)
+                if (POIDao == null)
                     return -1;
-                return userDao.deleteAll();
+                return POIDao.deleteAll();
             }
 
             @Override
@@ -75,9 +75,9 @@ class UserRepository {
         new AsyncTask<Integer, Void, Integer>() {
             @Override
             protected Integer doInBackground(Integer... integers) {
-                if (userDao == null)
+                if (POIDao == null)
                     return -1;
-                return userDao.deleteUser(integers[0]);
+                return POIDao.deleteUser(integers[0]);
             }
 
             @Override
@@ -88,7 +88,7 @@ class UserRepository {
         }.execute(id);
     }
 
-    public LiveData<List<User>> getAllUsers() {
+    public LiveData<List<POI>> getAllUsers() {
         return allUsers;
     }
 }

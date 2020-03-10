@@ -14,31 +14,285 @@
         android:orientation="vertical"
         android:padding="8dp">
 
-        <EditText
-            android:id="@+id/inputName"
+        <LinearLayout
+            android:id="@+id/layout"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:hint="NAME"
-            android:imeOptions="actionNext"
-            android:inputType="textPersonName"
-            android:lines="1"
-            android:maxLines="1"
-            android:padding="8dp"
-            android:singleLine="true"
-            android:textSize="18dp" />
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
 
-        <EditText
-            android:id="@+id/inputAge"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:hint="AGE"
-            android:imeOptions="actionDone"
-            android:inputType="numberDecimal"
-            android:lines="1"
-            android:maxLines="1"
-            android:padding="8dp"
-            android:singleLine="true"
-            android:textSize="18dp" />
+            <LinearLayout
+                android:id="@+id/layout_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="POI ID"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/floorCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Floor code"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPersonName"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textSize="18dp" />
+                <EditText
+                    android:id="@+id/floorNameEn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Floor name(en)"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPersonName"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textSize="18dp" />
+                <EditText
+                    android:id="@+id/floorNameKr"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Floor name(kr)"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPersonName"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textSize="18dp" />
+                <EditText
+                    android:id="@+id/floorIndex"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Floor Index"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textSize="18dp" />
+                <EditText
+                    android:id="@+id/positionX"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="x"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textSize="18dp" />
+                <EditText
+                    android:id="@+id/positionY"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="y"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/nameKr"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="POI name(kr)"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPersonName"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textSize="18dp" />
+                <EditText
+                    android:id="@+id/attElID"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="EL ID"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPersonName"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textSize="18dp" />
+                <EditText
+                    android:id="@+id/attElVendor"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="EL vendor"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPersonName"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textSize="18dp" />
+                <EditText
+                    android:id="@+id/attElFloorList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="EL floor list"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPersonName"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textSize="18dp" />
+                <EditText
+                    android:id="@+id/attDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Desc"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPersonName"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textSize="18dp" />
+                <EditText
+                    android:id="@+id/attTel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Tel"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPersonName"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/radius"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Radius"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberSigned"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/type"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Type"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textSize="18dp" />
+                <EditText
+                    android:id="@+id/restricted"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Restricted"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textSize="18dp" />
+                <EditText
+                    android:id="@+id/theta"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Theta"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberSigned"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textSize="18dp" />
+                <EditText
+                    android:id="@+id/isHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Is Home"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPersonName"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textSize="18dp" />
+                <EditText
+                    android:id="@+id/isCharger"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Is Charger"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPersonName"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textSize="18dp" />
+                <EditText
+                    android:id="@+id/isInPOIList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Is in POI List"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPersonName"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textSize="18dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
 
         <Button
             android:id="@+id/actionAdd"
